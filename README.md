@@ -33,5 +33,10 @@ This extension is built on Manifest V3 and is fully compatible with Chromium-bas
 4. Click **Load unpacked** and select the directory containing the repository files.
 5. Pin the extension to your toolbar to access the configuration interface and define your preferred grid geometry.
 
+## Development Transparency
+
+This project was engineered with the assistance of an AI Large Language Model (LLM). The AI was utilized as a pair-programming tool to assist with DOM analysis, CSS Grid mathematical calculations, and code scaffolding. The architectural vision, operational constraints, and code validation remain strictly human-driven.
+
 ## License
-None. Software should be free! Fork, modify, and maintain your own digital autonomy.
+
+MIT License. Users are encouraged to fork, modify, and maintain their own digital autonomy.
