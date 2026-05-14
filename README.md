@@ -15,6 +15,8 @@ Imposing overarching interface rules without granting users the freedom of confi
   * Playables (integrated games)
   * Community Posts
   * Explore / Trending suggestions
+  * Experimental generative AI search prompts (Beta)
+* **Structural Normalization:** Actively parses the DOM to detect and collapse empty layout containers, "skeleton" placeholders, and integrated promotional banners that would otherwise disrupt the mathematical flow of the grid.
 * **Dynamic State Observation:** Leverages an efficient `MutationObserver` to ensure custom UI constraints are maintained even as the platform's Single Page Application (SPA) architecture dynamically injects new content during infinite scrolling or page navigation.
 * **Zero-Dependency Architecture:** Built entirely with vanilla JavaScript and native CSS. It operates efficiently within the browser without the overhead of external frameworks or libraries.
 
@@ -22,6 +24,7 @@ Imposing overarching interface rules without granting users the freedom of confi
 The extension operates via a lightweight `content.js` script that acts as an intermediary between the browser's rendering engine and the platform's DOM. 
 1. **Mathematical Flexbox Injection:** It injects a dynamically generated stylesheet that strips away the platform's rigid row wrappers (`ytd-rich-grid-row`) and forces the primary content container into a continuous, fractionally calculated Flexbox layout. 
 2. **DOM Filtration:** As the platform's lazy-loading framework attempts to render new components, the script intercepts the nodes and applies user-defined display constraints, preventing the rendering of unselected content categories before they disrupt the visual flow.
+3. **Hierarchical Normalization:** Actively overrides encapsulated Shadow DOM properties to flatten rigid row hierarchies, ensuring that all valid media elements participate in a single, continuous flex container while automatically eliminating vertical dead space.
 
 ## Installation Instructions
 
@@ -35,7 +38,7 @@ This extension is built on Manifest V3 and is fully compatible with Chromium-bas
 
 ## Development Transparency
 
-This project was engineered with the assistance of an AI Large Language Model (LLM). The AI was utilized as a pair-programming tool to assist with DOM analysis, CSS Grid mathematical calculations, and code scaffolding. The architectural vision, operational constraints, and code validation remain strictly human-driven.
+This project was engineered with the assistance of an AI Large Language Model (LLM). The AI functioned as a pair-programming collaborator, assisting with complex DOM telemetry analysis, viewport geometry calculations, and the reconciliation of encapsulated Shadow DOM hierarchies. The underlying architectural vision, operational constraints, and final code validation remain strictly human-driven.
 
 ## License
 

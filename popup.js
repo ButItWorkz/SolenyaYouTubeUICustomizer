@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const showGamesInput = document.getElementById('showGames');
   const showPostsInput = document.getElementById('showPosts');
   const showExploreInput = document.getElementById('showExplore');
+  const showBetaInput = document.getElementById('showBeta');
 
   // Load saved preferences
   chrome.storage.sync.get({
@@ -13,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     showShorts: false,
     showGames: false,
     showPosts: false,
-    showExplore: false
+    showExplore: false,
+    showBeta: false
   }, (prefs) => {
     masterToggleInput.checked = prefs.enabled;
     gridCountInput.value = prefs.gridCount;
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showGamesInput.checked = prefs.showGames;
     showPostsInput.checked = prefs.showPosts;
     showExploreInput.checked = prefs.showExplore;
+    showBetaInput.checked = prefs.showBeta;
   });
 
   // Save preferences when changed
@@ -31,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
       showShorts: showShortsInput.checked,
       showGames: showGamesInput.checked,
       showPosts: showPostsInput.checked,
-      showExplore: showExploreInput.checked
+      showExplore: showExploreInput.checked,
+      showBeta: showBetaInput.checked
     });
   };
 
@@ -41,4 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
   showGamesInput.addEventListener('change', savePrefs);
   showPostsInput.addEventListener('change', savePrefs);
   showExploreInput.addEventListener('change', savePrefs);
+  showBetaInput.addEventListener('change', savePrefs);
 });
