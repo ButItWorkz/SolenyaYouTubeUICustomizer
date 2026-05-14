@@ -1,18 +1,32 @@
 {
   "manifest_version": 3,
-  "name": "Solenya YT Override",
-  "version": "1.1",
-  "description": "Fixing the garbage YouTube UI.",
-  "permissions": ["storage"],
-  "host_permissions": ["*://*.youtube.com/*"],
+  "name": "Solenya YouTube UI Customizer",
+  "version": "1.2.1",
+  "description": "A declarative DOM reconfiguration tool designed to restore user autonomy over viewport geometry and component rendering.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Solenya UI Settings"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
